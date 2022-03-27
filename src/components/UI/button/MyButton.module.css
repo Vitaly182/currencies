@@ -1,0 +1,11 @@
+.myBtn {
+    margin-top: 25px;
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    color: black;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid blue;
+    cursor: pointer;
+}

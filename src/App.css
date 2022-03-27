@@ -1,38 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
 .App {
-  text-align: center;
+    width: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.currency {
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-around;
+    padding: 15px;
+    border: 2px solid blue;
+    margin-top: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .currency__code {
+    padding-left: 10vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.currency__value {
+
+    padding-left: 5vw; 
+    text-align: right; 
+    margin: auto;
+    padding-left: 5;
 }
 
-.App-link {
-  color: #61dafb;
+.currency__previos_day_value {
+    margin-left: auto;
+} */
+
+.search_sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page__wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    padding: 15px;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.page__current {
+    border: 3px solid rgb(230, 98, 197);
+    font-weight: bold;
 }
