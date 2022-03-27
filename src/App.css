@@ -15,28 +15,16 @@
 
 .currency {
     display: flex;
-    /* width: 100%; */
     justify-content: space-around;
     padding: 15px;
     border: 2px solid blue;
     margin-top: 15px;
 }
 
-/* .currency__code {
-    padding-left: 10vw;
+.currency:hover {
+    background: radial-gradient(40% 50%, #FAECD5, #CAE4D8);
 }
 
-.currency__value {
-
-    padding-left: 5vw; 
-    text-align: right; 
-    margin: auto;
-    padding-left: 5;
-}
-
-.currency__previos_day_value {
-    margin-left: auto;
-} */
 
 .search_sort {
     display: flex;

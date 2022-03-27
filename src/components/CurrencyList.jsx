@@ -1,5 +1,6 @@
 import React from 'react';
 import CurrencyItem from './CurrencyItem';
+import ReactTooltip from 'react-tooltip';
 
 
 const CurrencyList = ({ currencies, title }) => {
@@ -36,6 +37,7 @@ const CurrencyList = ({ currencies, title }) => {
             {currencies.map(currency =>
                 <CurrencyItem key={currency.CharCode} currency={currency} />
             )}
+            <ReactTooltip place="bottom"/>
         </div>
     );
 };

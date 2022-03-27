@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import ReactTooltip from 'react-tooltip';
 
 const CurrencyItem = (props) => {
+    
+    useEffect(() => {
+        ReactTooltip.rebuild();
+    });
 
-    return (
-        <div className='currency'>
+    return (        
+        <div className='currency' data-tip={props.currency.Nominal + ' ' + props.currency.Name}>
             <div className='currency__code'>
                 {props.currency.CharCode}
             </div>
@@ -16,7 +21,7 @@ const CurrencyItem = (props) => {
             <div className='currency__previos_day_value'>
                 {Math.round((props.currency.Value-props.currency.Previous)/props.currency.Previous * 100 * Math.pow(10, 2)) / Math.pow(10, 2)}
             </div>
-        </div>
+        </div>      
     );
 };
 
