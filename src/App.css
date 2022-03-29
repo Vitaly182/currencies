@@ -15,16 +15,37 @@
 
 .currency {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 15px;
     border: 2px solid blue;
     margin-top: 15px;
 }
 
+
 .currency:hover {
     background: radial-gradient(40% 50%, #FAECD5, #CAE4D8);
 }
 
+.currency__code {
+    width: 8vw;
+    text-align: center
+}
+
+.currency__value {
+    width: 8vw;
+    text-align: center
+}
+
+.currency__previos_day_value {
+    width: 8vw;
+    text-align: center
+}
+
+.changed {
+    width: 5vw;
+    text-align: center
+}
 
 .search_sort {
     display: flex;

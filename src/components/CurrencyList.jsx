@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import CurrencyItem from './CurrencyItem';
 import ReactTooltip from 'react-tooltip';
 
@@ -29,13 +29,13 @@ const CurrencyList = ({ currencies, title }) => {
                 <div className='currency__previos_day_value'>
                     Стоимость вчера
                 </div>
-                <div className='currency__previos_day_value'>
+                <div className='changed'>
                     % изменение
                 </div>
             </div>
 
             {currencies.map(currency =>
-                <CurrencyItem key={currency.CharCode} currency={currency} />
+                <CurrencyItem key={currency.ID} currency={currency} />
             )}
             <ReactTooltip place="bottom"/>
         </div>

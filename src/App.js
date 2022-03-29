@@ -9,12 +9,13 @@ import MyButton from './components/UI/button/MyButton'
 import { useFetching } from './components/hooks/useFetching';
 import { getPageCount, getPagesArray } from './utils/pages';
 import Pagination from './components/UI/pagination/Pagination';
+import Modal from './components/UI/modal/Modal';
 
 
 function App() {
 
   let [currencies, setCurrencies] = useState([]);
-  const [allList, setallList] = useState([]);
+  const [allList, setAllList] = useState([]);
   const [filter, setFilter] = useState({ sort: '', query: '' });
   let [totalPages, setTotalPages] = useState(0);
   const [limit, setLimit] = useState(7);
@@ -24,10 +25,12 @@ function App() {
 
   const [fetchCurrencies, isCurrenciesLoading, currencyError] = useFetching(async (limit) => {
     const allList = await CurrencyService.getAll();
-    setallList(allList)
+    setAllList(allList)
     let totalCount = allList.length
     setTotalPages(getPageCount(totalCount, limit))
   })
+
+
 
   const sortedAndSearchCurrencies = useCurrencies(allList, filter.sort, filter.query);
 
@@ -71,9 +74,6 @@ function App() {
         changePage={changePage}
         totalPages={totalPages}
       />
-
-
-
     </div>
   );
 }
