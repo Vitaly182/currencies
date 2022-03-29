@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/currencies/static/css/main.30cd4e15.css",
+    "main.js": "/currencies/static/js/main.86063ca7.js",
+    "index.html": "/currencies/index.html",
+    "main.30cd4e15.css.map": "/currencies/static/css/main.30cd4e15.css.map",
+    "main.86063ca7.js.map": "/currencies/static/js/main.86063ca7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30cd4e15.css",
+    "static/js/main.86063ca7.js"
+  ]
+}
